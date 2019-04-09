@@ -107,25 +107,3 @@ class App extends Component {
 
 export default App;
 
-// loadMyAxios = () => {
-//   axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')
-//     .then(res => {
-//       const cryptos = res.data;
-//       console.log(cryptos);
-//       this.setState({ cryptos: cryptos });
-//     })
-// };
-
-// componentDidMount() {
-//   this.loadMyAxios();
-
-// }
-
-// componentDidUpdate() {
-//   setTimeout(
-//     function () {
-//       this.loadMyAxios();
-//     }
-//       .bind(this),
-//     3000
-//   );
