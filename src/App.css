@@ -31,9 +31,13 @@ body {
 
 .main {
   height: 560px;
-  width: 10rem;
+  width: 9rem;
   margin-top: 60px;
+  display: block;
   float: right;
+  z-index: -1;
+  position: fixed;
+  left: 60%;
 }
 
 .whatis {
@@ -43,6 +47,9 @@ body {
   line-height: 2rem;
   letter-spacing: 0.1rem;
   width: 50%;
+  text-align: left;
+  float: left;
+  z-index: 1;
 }
 .whatis h2 {
   margin-top: 4rem;
@@ -83,11 +90,9 @@ span.left {
 span.right {
   float: right;
 }
-
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .main {
     position: fixed;
-    position: absolute;
     left: 66%;
   }
   div#crypto-container {
@@ -117,7 +122,4 @@ span.right {
   div#crypto-container {
     width: 55%;
   }
-}
-
-@media screen and (max-width: 1024px) {
-}
+} */
