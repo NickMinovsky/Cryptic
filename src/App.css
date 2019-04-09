@@ -32,12 +32,11 @@ body {
 .main {
   height: 560px;
   width: 9rem;
-  margin-top: 60px;
+  margin-top: 20px;
   display: block;
   float: right;
   z-index: -1;
-  position: fixed;
-  left: 60%;
+  position: relative;
 }
 
 .whatis {
@@ -90,36 +89,39 @@ span.left {
 span.right {
   float: right;
 }
-/* @media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .main {
-    position: fixed;
-    left: 66%;
+    position: relative;
+    width: 50%;
+    font-size: 0.8rem;
+    top: 5rem;
   }
-  div#crypto-container {
-    width: 55%;
-    height: 0.5rem;
-  }
+
   .whatis {
-    font-size: 0.9rem;
+    line-height: normal;
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main {
+    position: relative;
+    margin: 6rem -2rem;
+  }
+
+  .whatis {
+    line-height: normal;
+    font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width: 414px) and (max-height: 736px) {
+@media screen and (max-width: 411px) {
   .main {
-    position: fixed;
-    left: 65%;
-    margin-top: -2rem;
+    position: relative;
+    margin: 6rem -2rem;
+  }
+
+  .whatis {
+    line-height: normal;
+    font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 425px) {
-  .main {
-    position: fixed;
-    left: 65%;
-  }
-  .whatis {
-    font-size: 0.9rem;
-  }
-  div#crypto-container {
-    width: 55%;
-  }
-} */
