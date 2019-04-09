@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       cryptos: []
     };
+    this.generateKey = this.generateKey.bind(this);
   }
   AxiosLoad() {
     // loading the JSON with axios
@@ -35,6 +36,9 @@ class App extends Component {
       3000
     );
   }
+  generateKey = pre => {
+    return new Date().getTime();
+  };
   state = {};
   render() {
     return (
@@ -44,7 +48,7 @@ class App extends Component {
         </header>
         <div className="main">
           {Object.keys(this.state.cryptos).map(key => (
-            <div id="crypto-container">
+            <div id="crypto-container" key={this.state.cryptos[key].USD}>
               <span className="left">{key}</span>
               <span className="right">
                 <NumberFormat
