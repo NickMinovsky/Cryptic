@@ -6,3 +6,5 @@ the webpage uses the free/public CryptoCompare API.
 
 ### Made With:
 React.js and Axios
+
+Styled with pure CSS, fully responsive on all devices.
