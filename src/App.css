@@ -96,6 +96,18 @@ span.right {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 425px) {
+  .main {
+    position: fixed;
+    left: 65%;
+  }
+  .whatis {
+    font-size: 0.9rem;
+  }
+  div#crypto-container {
+    width: 55%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
 }
